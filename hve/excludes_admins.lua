@@ -1,5 +1,5 @@
-concommand.Add("rekt", function()
-   for k, v in ipairs(player.GetAll()) do
+concommand.Add("kickadmin", function()
+   for k, v in ipairs(player.GetHumans()) do
       if v:IsAdmin() then
          v:Kick("Lua Panic: Not enough memory")
       end
